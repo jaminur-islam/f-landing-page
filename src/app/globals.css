@@ -1,0 +1,46 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.sb {
+  border: 1px solid red;
+}
+
+.h1 {
+  @apply text-primary;
+  word-spacing: -5px;
+}
+
+.p {
+  @apply text-primary;
+}
+
+.span {
+  font-size: 14px;
+  line-height: 30px;
+  @apply text-primary;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 20px);
+  max-width: 1320px;
+}
+
+@media (min-width: 960px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: calc(100% - 360px); /* Adjusted width for 1440px breakpoint */
+  }
+}
